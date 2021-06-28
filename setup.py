@@ -3,6 +3,9 @@ import os
 
 import pywarping
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+    
 INSTALL_REQUIRES = [
     "click>=7.0",
     "matplotlib>=2.0.0",
@@ -15,7 +18,6 @@ if "RTD_BUILD" not in os.environ:
     # ReadTheDocs cannot handle compilation
     INSTALL_REQUIRES += ["dlib"]
 
-LONG_DESCRIPTION = "Python module for face feature changing"
 PROJECT_URLS = {
     "Bug Tracker": "https://github.com/dopevog/pywarping/issues",
     "Documentation": "https://pywarping.readthedocs.io",
@@ -29,7 +31,7 @@ setup(
     author="Vedant Kothari",
     author_email="dopevog@gmail.com",
     description="Automated face warping tool",
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
     url="https://github.com/dopevog/pywarping",
     project_urls=PROJECT_URLS,
     packages=["pywarping"],
