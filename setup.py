@@ -32,6 +32,7 @@ setup(
     author_email="dopevog@gmail.com",
     description="Automated face warping tool",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/dopevog/pywarping",
     project_urls=PROJECT_URLS,
     packages=["pywarping"],
