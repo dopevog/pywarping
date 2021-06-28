@@ -1,8 +1,3 @@
-"""Package for face warping.
+"""Python module for face feature changing"""
 
-Release markers:
-X.Y
-X.Y.Z for bug fixes
-"""
-
-__version__ = '0.3'
+__version__ = '0.1'
